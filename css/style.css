@@ -8,9 +8,10 @@ body {
 /* header and footer areas */
 .menu { padding: 0; }
 .menu li { display: inline-block; }
+/*.menu li + li { border-left: 1px solid #ddd; } /* Vertical separators for menu */*/
 .article-meta, .menu a {
   text-decoration: none;
-  background: #eee;
+  background: none; /* Removed background color */
   padding: 5px;
   border-radius: 5px;
 }
@@ -21,6 +22,7 @@ hr {
   border-style: dashed;
   color: #ddd;
 }
+
 
 /* code */
 pre {
@@ -62,3 +64,24 @@ tr.spaceUnder>td{
   width: 1px;
   }
 /*thead, tfoot, tr:nth-child(even) { background: #eee }*/
+
+/* Hyperlinks styling */
+a {
+  color: #337ab7; /* Softer, more subdued blue */
+  text-decoration: none;
+}
+
+/* Hover effect for hyperlinks to enhance usability */
+a:hover {
+  color: #28597a; /* Deeper and more muted blue on hover */
+}
+
+
+
+
+
+
+
+
+
+
