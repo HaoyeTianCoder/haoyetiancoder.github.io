@@ -7,7 +7,7 @@ body {
 
 /* header and footer areas */
 .menu { padding: 0; }
-.menu li { display: inline-block; }
+.menu li { display: inline-block;  font-size: 24px; /* 设置菜单字体大小 */}
 /*.menu li + li { border-left: 1px solid #ddd; } /* Vertical separators for menu */*/
 .article-meta, .menu a {
   text-decoration: none;
