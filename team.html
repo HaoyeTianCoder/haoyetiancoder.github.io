@@ -6,95 +6,274 @@
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-		
+
 		  ga('create', 'UA-77256529-1', 'auto');
 		  ga('send', 'pageview');
-		
 		</script>
-		
-		<meta charset="UTF-8" />
 
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<title>Haoye TIAN @ The University of Melbourne</title>
-		
+
 		<meta name="keywords" content="Haoye TIAN, TIAN Haoye, Haoye TIAN Luxembourg, 田昊野 卢森堡" />
-	 	<meta name="description" content="Homepage, Haoye TIAN, University of Luxembourg, Luxembourg" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/fonts.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<meta name="description" content="Homepage, Haoye TIAN, University of Luxembourg, Luxembourg" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/fonts.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+		<style>
+			/* ---------- Team page ---------- */
+			.team-section { margin: 28px 0 8px; }
+			.team-section h3 {
+				font-size: 1.15em;
+				margin: 0 0 14px;
+				padding-bottom: 6px;
+				border-bottom: 1px solid #e5e5e5;
+			}
+			.team-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+				gap: 28px 24px;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			.member {
+				text-align: center;
+				line-height: 1.3;
+				padding: 0 4px;
+			}
+			.member a { text-decoration: none; color: inherit; }
+			.member a:hover .name { text-decoration: underline; }
+
+			/* Photo: shows the image if it exists, otherwise the initials behind it */
+			.avatar {
+				position: relative;
+				width: 120px;
+				height: 120px;
+				margin: 0 auto 10px;
+				border-radius: 50%;
+				overflow: hidden;
+				background: #e8edf3;
+				color: #5b6b7f;
+				font-size: 36px;
+				font-weight: 600;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.avatar img {
+				position: absolute;
+				inset: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			.member .name   { font-weight: 600; font-size: 19px; display: block; margin-bottom: 3px; }
+			.member .note   { display: block; font-size: 15px; color: #555; font-style: italic; margin-bottom: 3px; }
+			.member .school { display: block; font-size: 15px; color: #333; font-weight: 400; }
+			.member .period { display: block; font-size: 14px; color: #888; margin-top: 3px; }
+		</style>
 	</head>
-	
+
 	<body>
-        <nav>
-        <ul class="menu">
-          
-          <li><a href="./index.html">Home</a></li> |
-          <li><a href="./publications.html">Publications</a></li> |
-            <li><a href="./team.html">Team</a></li> |
-          <li><a href="./services.html">Services</a></li>
-          <!-- <li><a href="./travelmap.html">TravelMap</a></li> -->
-          
-        </ul>
-        <hr/>
-        </nav>
+		<nav>
+		<ul class="menu">
+		  <li><a href="./index.html">Home</a></li> |
+		  <li><a href="./publications.html">Publications</a></li> |
+		  <li><a href="./team.html">Team</a></li> |
+		  <li><a href="./services.html">Services</a></li>
+		  <!-- <li><a href="./travelmap.html">TravelMap</a></li> -->
+		</ul>
+		<hr/>
+		</nav>
 
-    
-    
-    <h2 id="service">ORBIT Group</h2>
-    <!-- <ul style='text-align:justify;'> -->
-        <!-- <h3>ORBIT Group</h3> -->
-        <strong>ORBIT</strong> —   <strong>O</strong>ptimization, <strong>R</strong>elia<strong>B</strong>ility, and <strong>I</strong>ntelligence in sof<strong>T</strong>ware
-        <ul>
-          <li>Ph.D. Students</li>
-            <ul>
-              <li><a href="">Mian Qin</a> (Oct 2026  - , )</li>
-              <li><a href="">Haoning Deng</a> (Sep 2026  - , )</li>
-              <li><a href="https://www.linkedin.com/in/xiaoyu-shi-b5b835190/">Xiaoyu Shi</a> (Jan 2026  - , )</li>
-              <li><a href="https://stringing.github.io/">Wenqiang Luo</a> (Sep 2023  - , co-supervisor). Now at Microsoft Research Asia.</li>
-              <li><a href="https://buaabarty.github.io/">Boyang Yang</a> (Sep 2022  - Jan 2026, co-supervisor). Now assistant professor at Yanshan University; CTO of Beijing Jisuanke Co., Ltd.</li>
-              <li><a href="https://github.com/datvo06">Dat Nguyen</a> (Apr 2024  - Dec 2024, co-supervisor). Now postdoc at Harvard University.</li>
-            </ul>
-          <li>Master's students</li>
-            <ul>
-              <li>Yimeng Mo (Sep 2026  - )</li>
-              <li>Roni Palva-aho (Mar 2026  - )</li>
-              <li>Kohsuke Sonoda (Mar 2026  - Aug 2026)</li>
-              <li>Andrei Iliescu (Mar 2026  - Aug 2026)</li>
-              <li>Albert Kiple (Mar 2026  - Aug 2026)</li>
-              <li>Perttu Niskanen (Mar 2026  - Aug 2026)</li>
-              <li>Roope Karppinen (Mar 2026  - Aug 2026)</li>
-            </ul>
-          <li>Visitors</li>
-            <ul>
-              <li><a href="https://profile.aoyangfang.top/">Aoyang Fang</a> (Jun 2026  - Jul 2026)</li>
-              <li><a href="https://coxhin.github.io/">Zhiqing Zhong</a> (May 2026  - Jul 2026)</li>
-            </ul>
-        </ul>
-        <strong>Opening Positions:</strong> 
-        <ul>
-          <li><a href="https://www.aalto.fi/en/study-options/aalto-doctoral-programme-in-science-0">Doctoral student</a>: I am seeking highly motivated PhD candidate to join my group, where we research AI + software engineering, security, etc. If you are interested, please email me your cover letter, CV and interest statement. :-)</li>
-          <li>Postdoc: (1) <a href="https://www.hiit.fi/hiit-postdoctoral-fellow-positions-in-computer-science">HIIT</a> (2) <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships">Marie Skłodowska-Curie</a> </li>
-          <li>Visiting student: <a href="https://www.aalto.fi/en/aalto-science-institute-asci/visiting-scientist-programmes?check_logged_in=1">AScI Programmes</a></li>
-        </ul> 
-        <!-- <h3>Co-Supervision</h3>
-        <ul>
-          <li>XXX</li>
-        </ul> -->
-    </ul>
+	<h2 id="service">ORBIT Group</h2>
+	<strong>ORBIT</strong> — <strong>O</strong>ptimization, <strong>R</strong>elia<strong>B</strong>ility, and <strong>I</strong>ntelligence in sof<strong>T</strong>ware
 
+	<!--
+		How to add a photo:
+		  Put a square-ish photo at  images/<file>.jpg  (the file name is in each <img src>).
+		  If the file is missing, the initials are shown instead — nothing breaks.
+	-->
 
+	<!-- ===================== Group Leader ===================== -->
+	<div class="team-section">
+		<h3>Group Leader</h3>
+		<ul class="team-grid">
+			<li class="member">
+				<a href="./index.html">
+					<div class="avatar">HT<img src="images/haoye-tian.jpg" alt="Haoye Tian" onerror="this.remove()"></div>
+					<span class="name">Haoye Tian</span>
+				</a>
+				<span class="school">Assistant Professor, Aalto University</span>
+			</li>
+		</ul>
+	</div>
 
-    <footer>
-      <script src="js/math-code.js"></script>
-      <script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-      <script async src="js/center-img.js"></script>
-      <hr>&copy; <a href="https://haoyetiancoder.github.io">Haoye TIAN</a> 2026 | <a href="https://scholar.google.com/citations?user=HalPbbEAAAAJ&hl=en">Google Scholar</a> | <a href="https://dblp.org/pid/223/3393.html">DBLP</a>
-    </footer>
-    
-    </body>
+	<!-- ===================== Ph.D. Students ===================== -->
+	<div class="team-section">
+		<h3>Ph.D. Students</h3>
+		<ul class="team-grid">
+			<li class="member">
+				<div class="avatar">MQ<img src="images/mian-qin.jpg" alt="Mian Qin" onerror="this.remove()"></div>
+				<span class="name">Mian Qin</span>
+				<span class="school">M.S. &amp; B.S., Beijing Institute of Technology</span>
+				<span class="period">Oct 2026 –</span>
+			</li>
+			<li class="member">
+				<div class="avatar">HD<img src="images/haoning-deng.jpg" alt="Haoning Deng" onerror="this.remove()"></div>
+				<span class="name">Haoning Deng</span>
+				<span class="school">M.S., University of Science and Technology of China</span>
+				<span class="school">B.S., University of Electronic Science and Technology of China</span>
+				<span class="period">Sep 2026 –</span>
+			</li>
+			<li class="member">
+				<a href="https://www.linkedin.com/in/xiaoyu-shi-b5b835190/">
+					<div class="avatar">XS<img src="images/xiaoyu-shi.jpg" alt="Xiaoyu Shi" onerror="this.remove()"></div>
+					<span class="name">Xiaoyu Shi</span>
+				</a>
+				<span class="school">M.S., University of Copenhagen</span>
+				<span class="school">B.S., Shanghai Jiao Tong University</span>
+				<span class="period">Jan 2026 –</span>
+			</li>
+			<li class="member">
+				<a href="https://github.com/datvo06">
+					<div class="avatar">DN<img src="images/dat-nguyen.jpg" alt="Dat Nguyen" onerror="this.remove()"></div>
+					<span class="name">Dat Nguyen</span>
+				</a>
+				<span class="note">Now Postdoc at Harvard University</span>
+				<span class="school">Ph.D., University of Melbourne</span>
+				<span class="period">Apr 2024 – Dec 2024 · co-supervised</span>
+			</li>
+			<li class="member">
+				<a href="https://stringing.github.io/">
+					<div class="avatar">WL<img src="images/wenqiang-luo.jpg" alt="Wenqiang Luo" onerror="this.remove()"></div>
+					<span class="name">Wenqiang Luo</span>
+				</a>
+				<span class="note">Now at Microsoft Research Asia</span>
+				<span class="school">Ph.D. Student, City University of Hong Kong</span>
+				<span class="school">M.S., Southeast University</span>
+				<span class="period">Sep 2023 – now · co-supervised</span>
+			</li>
+			<li class="member">
+				<a href="https://buaabarty.github.io/">
+					<div class="avatar">BY<img src="images/boyang-yang.jpg" alt="Boyang Yang" onerror="this.remove()"></div>
+					<span class="name">Boyang Yang</span>
+				</a>
+				<span class="note">Now Assistant Professor at Yanshan University; CTO of Beijing Jisuanke Co., Ltd.</span>
+				<span class="school">Ph.D., Yanshan University</span>
+				<span class="school">M.S. &amp; B.S., Beihang University</span>
+				<span class="period">Sep 2022 – Jan 2026 · co-supervised</span>
+			</li>
+		</ul>
+	</div>
+
+	<!-- ===================== Research Assistants & Interns ===================== -->
+	<div class="team-section">
+		<h3>Research Assistants &amp; Interns</h3>
+		<ul class="team-grid">
+			<li class="member">
+				<div class="avatar">YM<img src="images/yimeng-mo.jpg" alt="Yimeng Mo" onerror="this.remove()"></div>
+				<span class="name">Yimeng Mo</span>
+				<span class="school">M.S. Student, Aalto University</span>
+				<span class="school">B.S., Tongji University</span>
+				<span class="period">Sep 2026 –</span>
+			</li>
+		</ul>
+	</div>
+
+	<!-- ===================== Visitors ===================== -->
+	<div class="team-section">
+		<h3>Visitors</h3>
+		<ul class="team-grid">
+			<li class="member">
+				<div class="avatar">SL<img src="images/shifan-liu.jpg" alt="Shifan Liu" onerror="this.remove()"></div>
+				<span class="name">Shifan Liu</span>
+				<span class="school">Ph.D. Student, University of Science and Technology Beijing</span>
+				<span class="period">Nov 2026 – Dec 2026</span>
+			</li>
+			<li class="member">
+				<a href="https://profile.aoyangfang.top/">
+					<div class="avatar">AF<img src="images/aoyang-fang.jpg" alt="Aoyang Fang" onerror="this.remove()"></div>
+					<span class="name">Aoyang Fang</span>
+				</a>
+				<span class="school">Ph.D. Student, The Chinese University of Hong Kong, Shenzhen</span>
+				<span class="period">Jun 2026 – Jul 2026</span>
+			</li>
+			<li class="member">
+				<a href="https://coxhin.github.io/">
+					<div class="avatar">ZZ<img src="images/zhiqing-zhong.jpg" alt="Zhiqing Zhong" onerror="this.remove()"></div>
+					<span class="name">Zhiqing Zhong</span>
+				</a>
+				<span class="school">Ph.D. Student, The Chinese University of Hong Kong, Shenzhen</span>
+				<span class="period">May 2026 – Jul 2026</span>
+			</li>
+		</ul>
+	</div>
+
+	<!-- ===================== Master Thesis Students ===================== -->
+	<div class="team-section">
+		<h3>Master Thesis Students</h3>
+		<ul class="team-grid">
+			<li class="member">
+				<div class="avatar">RP<img src="images/roni-palva-aho.jpg" alt="Roni Palva-aho" onerror="this.remove()"></div>
+				<span class="name">Roni Palva-aho</span>
+				<span class="school">Aalto University</span>
+				<span class="period">Mar 2026 –</span>
+			</li>
+			<li class="member">
+				<div class="avatar">KS<img src="images/kohsuke-sonoda.jpg" alt="Kohsuke Sonoda" onerror="this.remove()"></div>
+				<span class="name">Kohsuke Sonoda</span>
+				<span class="school">Aalto University</span>
+				<span class="period">Mar 2026 – Aug 2026</span>
+			</li>
+			<li class="member">
+				<div class="avatar">AI<img src="images/andrei-iliescu.jpg" alt="Andrei Iliescu" onerror="this.remove()"></div>
+				<span class="name">Andrei Iliescu</span>
+				<span class="school">Aalto University</span>
+				<span class="period">Mar 2026 – Aug 2026</span>
+			</li>
+			<li class="member">
+				<div class="avatar">AK<img src="images/albert-kiple.jpg" alt="Albert Kiple" onerror="this.remove()"></div>
+				<span class="name">Albert Kiple</span>
+				<span class="school">Aalto University</span>
+				<span class="period">Mar 2026 – Aug 2026</span>
+			</li>
+			<li class="member">
+				<div class="avatar">PN<img src="images/perttu-niskanen.jpg" alt="Perttu Niskanen" onerror="this.remove()"></div>
+				<span class="name">Perttu Niskanen</span>
+				<span class="school">Aalto University</span>
+				<span class="period">Mar 2026 – Aug 2026</span>
+			</li>
+			<li class="member">
+				<div class="avatar">RK<img src="images/roope-karppinen.jpg" alt="Roope Karppinen" onerror="this.remove()"></div>
+				<span class="name">Roope Karppinen</span>
+				<span class="school">Aalto University</span>
+				<span class="period">Mar 2026 – Aug 2026</span>
+			</li>
+		</ul>
+	</div>
+
+	<!-- ===================== Opening Positions ===================== -->
+	<div class="team-section">
+		<h3>Opening Positions</h3>
+		<ul>
+		  <li><a href="https://www.aalto.fi/en/study-options/aalto-doctoral-programme-in-science-0">Doctoral student</a>: I am seeking highly motivated PhD candidates to join my group, where we research AI + software engineering, security, etc. If you are interested, please email me your cover letter, CV and interest statement. :-)</li>
+		  <li>Postdoc: (1) <a href="https://www.hiit.fi/hiit-postdoctoral-fellow-positions-in-computer-science">HIIT</a> (2) <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships">Marie Skłodowska-Curie</a></li>
+		  <li>Visiting student: <a href="https://www.aalto.fi/en/aalto-science-institute-asci/visiting-scientist-programmes?check_logged_in=1">AScI Programmes</a></li>
+		</ul>
+	</div>
+
+	<footer>
+	  <script src="js/math-code.js"></script>
+	  <script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+	  <script async src="js/center-img.js"></script>
+	  <hr>&copy; <a href="https://haoyetiancoder.github.io">Haoye TIAN</a> 2026 | <a href="https://scholar.google.com/citations?user=HalPbbEAAAAJ&hl=en">Google Scholar</a> | <a href="https://dblp.org/pid/223/3393.html">DBLP</a>
+	</footer>
+
+	</body>
 </html>
-
-
-
